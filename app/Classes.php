@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rixhersajazi
- * Date: 11/13/17
- * Time: 8:30 PM
- */
+
+namespace App;
+
+class Classes extends \Illuminate\Database\Eloquent\Model
+{
+    protected $table = "classes";
+};
