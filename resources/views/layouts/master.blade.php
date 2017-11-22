@@ -15,7 +15,6 @@
 </div>
 
 <footer class="navbar navbar-fixed-bottom">
-    Hello!
 </footer>
 
 </body>
