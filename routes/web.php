@@ -52,7 +52,13 @@ Route::get('/user/{userId}', function($userId) use($tutorials) {
    return view('content.userInfo', ['user' => $user, 'classes' => $classes, 'tutorials' => $tutorials]);
 });
 
+Route::get('/unix_history', function() use($tutorials) {
+    return view('content.unix_history', ['tutorials' => $tutorials]);
+});
+
 Route::post('/tutorials/{tutorialId}/section/{sectionId}', function($tutorialId, $sectionId) {
+    dd('FUCK');
+
     $section = \App\Sections::query()
         ->join('tutorials', 'tutorials.id', '=', 'sections.tutorial_id')
         ->where('tutorial_id', '=', $tutorialId)

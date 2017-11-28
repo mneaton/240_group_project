@@ -26,7 +26,7 @@
 				@endforeach()
 		<li><a href="/commands">Commands</a></li>
 		<li class="dropdown">
-			<a href="#" class="dropbtn">Unix Overview</a>
+			<a href="/unix_history" class="dropbtn">Unix Overview</a>
 			<div class="dropdown-content">
 				<a href="/what">What is Unix used for?</a>
 				<a href="/history">History of Unix</a>
