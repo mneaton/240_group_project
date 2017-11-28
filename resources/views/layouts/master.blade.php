@@ -38,6 +38,8 @@
 
 <footer class="navbar navbar-fixed-bottom">
 </footer>
+<link href="{!! asset('css/style.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<link rel="icon" href="{!! asset('favicon.ico') !!}" />
 
 </body>
 </html>

@@ -50,7 +50,6 @@ Route::get('/user/{userId}', function($userId) {
        ->get();
 
    return view('content.userInfo', ['user' => $user, 'classes' => $classes]);
-
 });
 
 Route::post('/tutorials/{tutorialId}/section/{sectionId}', function($tutorialId, $sectionId) {
@@ -59,6 +58,4 @@ Route::post('/tutorials/{tutorialId}/section/{sectionId}', function($tutorialId,
         ->where('tutorial_id', '=', $tutorialId)
         ->where('section_id', '=', $sectionId)
         ->get();
-
-    echo Request::post('action');
 });
