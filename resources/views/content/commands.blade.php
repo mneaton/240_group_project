@@ -9,6 +9,7 @@
                 @foreach($commands as $command)
                     <tr>
                         <td><strong><li><a href="/command/{{$command->id}}">{{  $command->command }}</a></li> </strong><td>
+                    </tr>
                         @endforeach
                     </tr>
             </table>

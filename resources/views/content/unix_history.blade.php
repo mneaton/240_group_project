@@ -7,20 +7,20 @@
 
     <p>With Linux, you are allowed the freedom to:</p>
 
-    <ul>
+    <ol>
         <li>redistribute copies so you can help your neighbor</li>
         <li>distribute copies of your modified versions to others</li>
-    </ul>
+    </ol>
 
-    <p>Without the operating system, the software wouldn’t function.</p>
+    <p>Without the operating system, the software wouldn't function.</p>
 
-    <p>The following is what is composed of the linux: </p>
+    <p>The following is what is composed of the Linux: </p>
 
-    <ul>
+    <ol>
         <li>The Boot-loader: The software that manages the boot process of your computer. For most users, this will simply be a splash
             screen that pops up and eventually goes away to boot into the operating system.</li>
 
-        <li> The Kernel: The core of the system that manages the CPU and its’ memory. </li>
+        <li> The Kernel: The core of the system that manages the CPU and its memory. </li>
 
         <li> Daemons: These are background services (printing and sound, etc.) that can start during reboot, or after you log into your desktop. </li>
 
@@ -34,5 +34,6 @@
             software titles that can be easily found and installed. Most modern Linux distributions include App Store-like tools that centralize and
             simplify application installation. </li>
 
-    </ul>
+    </ol>
+
 @endsection()

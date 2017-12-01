@@ -4,8 +4,8 @@
 
 @section('content')
 
-    @foreach($tutorials as $tutorial)
-        <a href="/tutorial/{{$tutorial->id}}">{{ $tutorial->name }}</a> <br>
+    @foreach($contexts as $context)
+        <a href="/tutorials/{{$type}}/{{$context->id or $context->type}}">{{$context->name or $context->type}}</a> <br>
     @endforeach
 
 @endsection

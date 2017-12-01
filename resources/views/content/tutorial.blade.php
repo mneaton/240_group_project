@@ -1,9 +1,17 @@
 @extends('layouts.master')
 
-@section('title', $tutorial->name)
+@section('title', $title . ' Tutorial')
 
 @section('content')
-    @foreach($sections as $section)
-        <a href="/tutorials/{{$tutorial->id}}/section/{{$section->section_id}}">{{$section->body}}</a> <br>
+    @foreach($tutorial_commands as $command)
+        @if(!is_null($command->videoUrl))
+            {{ $command->videoUrl }} <br>
+        @else
+            <b>No Video Available!</b> <br>
+        @endif
+
+        {{ $command->command }} <br>
+        {{ $command->description }} <br>
+        <br><br><br>
     @endforeach
 @endsection

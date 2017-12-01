@@ -11,19 +11,19 @@
 
 </head>
 <body>
-<div class="imageL">"icon.png"</div>
-<div class="group">LaG6 Unix</div>
+<img src="{{url('/images/newLogoSmall.png')}}" alt="Image" class="imageL"/>
+<h1 class="group">LaG6 Unix <br />Tutorial</h1>
 
 <div class="nav">
 
 	<ul>
 		<li><a class="active" href="/">Home</a></li>
 		<li class="dropdown">
-			<a href="/tutorials" class="dropbtn">Tutorials</a>
+			<a href="" class="dropbtn">Tutorials</a>
 			<div class="dropdown-content">
-				@foreach($tutorials as $tutorial)
-					<a href="/tutorial/{{$tutorial->id}}">{{$tutorial->name}}</a>
-				@endforeach()
+				<a href="/tutorials/type">By Type</a>
+				<a href="/tutorials/skill_assessment">By Skill Assessment</a></div></li>
+		<li><a href="/skills_assessment">Skills Assessment</a></li>
 		<li><a href="/commands">Commands</a></li>
 		<li class="dropdown">
 			<a href="/unix_history" class="dropbtn">Unix Overview</a>
