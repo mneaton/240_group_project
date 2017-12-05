@@ -1,0 +1,15 @@
+/tutorials
+	1)
+	2)
+	3)
+	4) 
+	5)
+	10) 
+/tutorial/<id>
+	show all commands within the tutorial on this page
+
+/skills_assessments
+	still show all sections and then click per section to answer
+
+/skill_assessment/<tutorial_id><section_id>
+	will still show like /tutorials/<>/section/<>

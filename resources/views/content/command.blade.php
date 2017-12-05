@@ -3,7 +3,14 @@
 @section('title', $command->command)
 
 @section('content')
-    {{$command->command}}
-    {{$command->id}}
-    {{$command->description}}
+    <div class="main">
+        <div class="text">
+            <p>
+                {{$command->command}}
+                {{$command->id}}
+                {{$command->description}}
+            </p>
+            <p><a href="{{URL::previous()}}">Return to Command List</a></p>
+        </div>
+    </div>
 @endsection
