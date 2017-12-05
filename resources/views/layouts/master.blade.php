@@ -17,7 +17,7 @@
 <div class="nav">
 
 	<ul>
-		<li><a class="active" href="/">Home</a></li>
+		<li><a href="/">Home</a></li>
 		<li class="dropdown">
 			<a href="" class="dropbtn">Tutorials</a>
 			<div class="dropdown-content">
