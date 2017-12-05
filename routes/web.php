@@ -46,7 +46,6 @@ Route::get('/command/{commandId}', function($commandId) use($tutorials) {
 
 Route::get('/commands', function() use($tutorials) {
     $commands = \App\Commands::query()
-        ->leftJoin('sections', 'commands.id', '=', 'sections.command_id')
         ->orderBy('commands.firstLetter')
         ->get();
 
@@ -111,5 +110,17 @@ Route::post('/skills_assessment/{tutorialId}/section/{sectionId}', function($tut
         return Response::redirectTo('skills_assessment')->with('success', 'All sections for tutorial ' . $section->name . ' completed!');
     }
 
-    dd('WTF BRO');
+    $nextSection = \App\Sections::query()
+        ->join('tutorials', 'tutorials.id', '=', 'sections.tutorial_id')
+        ->join('commands', 'commands.id', '=', 'sections.command_id')
+        ->where('tutorial_id', '=', $tutorialId)
+        ->where('sections.id', '>', $sectionId)
+        ->get();
+
+    dd($nextSection);
+
+    if (isset($nextSection->sectionId) && is_int($nextSection->sectionId)) {
+        return Response::redirectTo('/skills_assessment/' . $tutorialId . '/section/' . $sectionId->sectionid);
+    }
+
 });
